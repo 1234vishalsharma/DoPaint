@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/layout_shape"
+        >
+
+        <ImageButton
+            android:id="@+id/red_color"
+            android:layout_width="65dp"
+            android:layout_height="66dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/red_shape" />
+        <ImageButton
+            android:id="@+id/black_color"
+            android:layout_width="65dp"
+            android:layout_height="66dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/black_shape" />
+        <ImageButton
+            android:id="@+id/yellow_color"
+            android:layout_width="65dp"
+            android:layout_height="66dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/yellow_shape" />
+        <ImageButton
+            android:id="@+id/green_color"
+            android:layout_width="65dp"
+            android:layout_height="66dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/green_shape" />
+        <ImageButton
+            android:id="@+id/white_color"
+            android:layout_width="65dp"
+            android:layout_height="66dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/white_shape" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout">
+
+        <include layout="@layout/paint_area" />
+    </RelativeLayout>
+
+</RelativeLayout>
